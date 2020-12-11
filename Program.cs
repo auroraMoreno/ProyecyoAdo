@@ -16,7 +16,7 @@ namespace ProyecyoAdo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form01PrimerADO());
+            Application.Run(new Form04ModificarSalas());
         }
     }
 }

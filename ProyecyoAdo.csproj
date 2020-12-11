@@ -52,10 +52,37 @@
     <Compile Include="Form01PrimerADO.Designer.cs">
       <DependentUpon>Form01PrimerADO.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form02BuscadorEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form02BuscadorEmpleados.Designer.cs">
+      <DependentUpon>Form02BuscadorEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form03EliminarEnfermo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form03EliminarEnfermo.Designer.cs">
+      <DependentUpon>Form03EliminarEnfermo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form04ModificarSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form04ModificarSalas.Designer.cs">
+      <DependentUpon>Form04ModificarSalas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form01PrimerADO.resx">
       <DependentUpon>Form01PrimerADO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form02BuscadorEmpleados.resx">
+      <DependentUpon>Form02BuscadorEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form03EliminarEnfermo.resx">
+      <DependentUpon>Form03EliminarEnfermo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form04ModificarSalas.resx">
+      <DependentUpon>Form04ModificarSalas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
