@@ -42,5 +42,12 @@ namespace ProyecyoAdo
             this.reader.Close();
             this.cn.Close();
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            this.com.Parameters.AddWithValue("@SALA_CODE", this.txtNombre.Text);
+            String query =
+                "update sala";
+        }
     }
 }

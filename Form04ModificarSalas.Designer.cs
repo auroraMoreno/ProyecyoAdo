@@ -76,6 +76,7 @@
             this.btnModificar.TabIndex = 4;
             this.btnModificar.Text = "Modifcar Sala";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // Form04ModificarSalas
             // 
