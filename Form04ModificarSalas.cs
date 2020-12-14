@@ -31,14 +31,14 @@ namespace ProyecyoAdo
             this.lstSalas.Items.Clear();
             this.com.Connection = this.cn;
             this.com.CommandType = CommandType.Text;
-            this.com.CommandText = "select * from sala";
+            this.com.CommandText = "select distinct nombre from sala";
             this.cn.Open();
             this.reader = this.com.ExecuteReader();
             while (this.reader.Read())
             {
                 String nombre = this.reader["NOMBRE"].ToString();
-                String sala_cod = this.reader["SALA_COD"].ToString();
-                this.lstSalas.Items.Add(nombre + " " + sala_cod);
+                //String sala_cod = this.reader["SALA_COD"].ToString();
+                this.lstSalas.Items.Add(nombre);
             }
             this.reader.Close();
             this.cn.Close();
@@ -46,9 +46,18 @@ namespace ProyecyoAdo
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            this.com.Parameters.AddWithValue("@SALA_CODE", this.txtNombre.Text);
-            String query =
-                "update sala";
+            String consulta = "update sala set nombre=@newname where nombre=@oldname";
+            String newname = this.txtNombre.Text;
+            String oldname = this.lstSalas.SelectedItem.ToString();
+            this.com.Parameters.AddWithValue("@newname", newname);
+            this.com.Parameters.AddWithValue("@oldname", oldname);
+            this.com.CommandType = CommandType.Text;
+            this.com.CommandText = consulta;
+            this.cn.Open();
+            int update = this.com.ExecuteNonQuery();
+            this.cn.Close();
+            this.com.Parameters.Clear();
+            this.CargarSalas();
         }
     }
 }
