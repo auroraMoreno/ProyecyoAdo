@@ -19,7 +19,8 @@ namespace ProyecyoAdo
         public Form04ModificarSalas()
         {
             InitializeComponent();
-            String cadena = "Data Source=LOCALHOST;Initial Catalog=HOSPITAL;Persist Security Info=True;User ID=SA;Password=MCSD2020";
+            //String cadena = "Data Source=LOCALHOST;Initial Catalog=HOSPITAL;Persist Security Info=True;User ID=SA;Password=MCSD2020"; //cadena tajamar
+            String cadena =@"Data Source=LAPTOP-KR2NL673\SQLAURORAMASTER;Initial Catalog=HOSPITAL;Persist Security Info=True;User ID=sa;Password=MCSD2020";//cadena casa
             this.cn = new SqlConnection(cadena);
             this.com = new SqlCommand();
             this.CargarSalas();

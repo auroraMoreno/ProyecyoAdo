@@ -21,7 +21,8 @@ namespace ProyecyoAdo
         public Form03EliminarEnfermo()
         {
             InitializeComponent();
-            String cadena = "Data Source=LOCALHOST;Initial Catalog=HOSPITAL;Persist Security Info=True;User ID=SA;Password=MCSD2020";
+            //String cadena = "Data Source=LOCALHOST;Initial Catalog=HOSPITAL;Persist Security Info=True;User ID=SA;Password=MCSD2020";
+            String cadena = @"Data Source=LAPTOP-KR2NL673\SQLAURORAMASTER;Initial Catalog=HOSPITAL;Persist Security Info=True;User ID=sa;Password=MCSD2020";//cadena casa
             this.cn = new SqlConnection(cadena);
             this.com = new SqlCommand();
             //this.pam = new SqlParameter();
