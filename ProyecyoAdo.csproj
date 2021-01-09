@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data\EmpleadoContext.cs" />
+    <Compile Include="Data\EmpleadosContext.cs" />
     <Compile Include="Data\EnfermoContext.cs" />
     <Compile Include="Data\PlantillaHospitalContext.cs" />
     <Compile Include="Form01PrimerADO.cs">
@@ -120,6 +121,24 @@
     <Compile Include="Models\Enfermo.cs" />
     <Compile Include="Models\Hospital.cs" />
     <Compile Include="Models\Plantilla.cs" />
+    <Compile Include="PracticaEmpleadosOficios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaEmpleadosOficios.Designer.cs">
+      <DependentUpon>PracticaEmpleadosOficios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticaModifcarSalas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaModifcarSalas.Designer.cs">
+      <DependentUpon>PracticaModifcarSalas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PracticaPlantillaDoctorHospital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PracticaPlantillaDoctorHospital.Designer.cs">
+      <DependentUpon>PracticaPlantillaDoctorHospital.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form01PrimerADO.resx">
@@ -154,6 +173,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form11HospitalesPlantilla.resx">
       <DependentUpon>Form11HospitalesPlantilla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaEmpleadosOficios.resx">
+      <DependentUpon>PracticaEmpleadosOficios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaModifcarSalas.resx">
+      <DependentUpon>PracticaModifcarSalas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PracticaPlantillaDoctorHospital.resx">
+      <DependentUpon>PracticaPlantillaDoctorHospital.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
